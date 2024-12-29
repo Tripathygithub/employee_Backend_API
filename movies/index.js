@@ -3,7 +3,7 @@ const { resolve } = require('path');
 let { getAllMovies, getMovieById, addNewMovie } = require('./movie.js');
 const app = express();
 const port = 3000;
-
+const cors=require('cors');
 app.use(cors());
 
 app.get('/api/movies', (req, res) => {
